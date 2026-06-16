@@ -1,4 +1,4 @@
-# Web Development Project 2 - *Name of App Here*
+# Web Development Project 2 - React Flashcards
 
 Submitted by: Allan Soria
 
@@ -42,7 +42,7 @@ The app allows the user to return to previous flashcards with a 'Prev' button.
 
 Here's a walkthrough of implemented required features:
 
-<img src=".assets/Animation.gif" width="50%" height="50%" alt='Video Walkthrough'/>
+<img src="./assets/Animation.gif" width="50%" height="50%" alt='Video Walkthrough'/>
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
