@@ -36,10 +36,10 @@ function App() {
   })
   const [historyIndex, setHistoryIndex] = useState(0)
   const [showAnswer, setShowAnswer] = useState(false)
-  const [count, setCount] = useState(1)
   const [isFlipping, setIsFlipping] = useState(false)
 
   const curFlashcard = history[historyIndex]
+  const currentCard = reactFlashcards[curFlashcard]
   const total = reactFlashcards.length
 
   function goNext() {
@@ -90,11 +90,11 @@ function App() {
 
       <section
         id="flashcard-display"
-        className={`${showAnswer ? 'show-answer' : 'show-question'} ${isFlipping ? 'flipping' : ''}`}
+        className={`${showAnswer ? 'show-answer' : 'show-question'} ${isFlipping ? 'flipping' : ''} difficulty-${currentCard.difficulty}`}
         onClick={flip}
         aria-label="Flashcard — click to reveal answer"
       >
-        <Flashcard card={reactFlashcards[curFlashcard]} showAnswer={showAnswer} />
+        <Flashcard card={currentCard} showAnswer={showAnswer} />
       </section>
 
       <p id="hint">{showAnswer ? 'click to see question' : 'click to reveal answer'}</p>
